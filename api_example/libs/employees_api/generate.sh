@@ -1,0 +1,1 @@
+openapi-python-client generate --url http://158.101.191.70:8085/v3/api-docs --config gen_config.yml
