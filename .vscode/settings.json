@@ -1,0 +1,15 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/__pycache__": true
+    },
+    "robot.lint.robocop.enabled": false,
+    "robot.interactiveConsole.arguments": [
+        "--output", "${workspaceRoot}/logs/interactive_console.xml"
+    ],
+    "python.analysis.completeFunctionParens": true,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true
+      }
+}
