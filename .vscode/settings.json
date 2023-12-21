@@ -5,8 +5,9 @@
     },
     "robot.lint.robocop.enabled": false,
     "robot.interactiveConsole.arguments": [
-        "--output", "${workspaceRoot}/logs/interactive_console.xml"
+        "--output", "${workspaceFolder}/logs/interactive_console.xml"
     ],
+    "robot.pythonpath": ["${workspaceFolder}"],
     "python.analysis.completeFunctionParens": true,
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter",
