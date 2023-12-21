@@ -1,0 +1,3 @@
+// Returns data of the employee with the given ID
+params employee_id
+Some magic happens here

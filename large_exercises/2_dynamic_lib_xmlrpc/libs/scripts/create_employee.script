@@ -1,0 +1,3 @@
+// Creates new employee with the given values
+params first_name, second_name, role
+Some magic happens here
