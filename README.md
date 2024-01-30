@@ -30,7 +30,8 @@ Or you can create a Gitpod workspace from any GitHub repository just pasting it'
 Initially, the workspace has some common prerequisites installed, including **Python**, **Node.js**, **Java** and **Docker**. See the full list in the [Gitpod docs](https://www.gitpod.io/docs/configure/workspaces/workspace-image).
 
 However, the workspace contains neither Robot Framework nor any libraries or Python modules installed. You can install them as usual:  
-`pip install -r requirements.txt`  
+`pip install -r requirements.txt`
+> After initial Robot Framework installation, you might need to call the **Reload window** command to get the VS Code RF Language Server extension working - use _Command Palette_ to find it.
 
 ### Check your workspace is set up successfully
 Use the test suites in the _examples/0_check_installation_ folder - the tests should run without any errors.
