@@ -1,0 +1,4 @@
+# THESE ARE JUST COPIED FROM DATABASE LIBRARY, ADAPT THEM
+
+robotframework
+robotframework-excellib

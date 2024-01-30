@@ -1,6 +1,6 @@
 from robot.api.deco import keyword
 from .libcore import MyLibCore
-from .version import VERSION
+from ...version import VERSION
 
 
 class MyLibrary(MyLibCore):
