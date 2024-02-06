@@ -45,3 +45,7 @@ Test Multi Return
     FOR    ${element}    IN    @{All returns}
         Log To Console    ${element}
     END
+
+Test Visibility
+    # Expected to fail
+    My Special Function

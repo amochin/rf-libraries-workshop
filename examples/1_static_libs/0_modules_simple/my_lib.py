@@ -1,3 +1,5 @@
+from robot.api.deco import not_keyword
+
 def my_favourite_keyword(day):
     result = "Hello world"
     if day == "Monday":
@@ -41,3 +43,8 @@ def keyword_multi_return():
     a = "hello"
     b = "world"
     return a, b
+
+@not_keyword
+def my_special_function():
+    "Does nothing"
+    pass
