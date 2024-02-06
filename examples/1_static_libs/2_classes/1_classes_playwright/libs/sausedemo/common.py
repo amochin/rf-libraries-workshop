@@ -1,9 +1,10 @@
 """
 Common keywords for the *Sauce Demo" web app
 """
-from .page_object import page, setup_playwright, teardown_playwright
+from .playwright_manager import setup_playwright, teardown_playwright, page
 
 BASE_URL = "https://www.saucedemo.com/"
+
 
 def launch_sausedemo():
     """
