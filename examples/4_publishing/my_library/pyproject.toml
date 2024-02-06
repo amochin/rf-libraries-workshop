@@ -1,4 +1,3 @@
-# THESE ARE JUST COPIED FROM DATABASE LIBRARY, ADAPT THEM
 [build-system]
 requires = [
     "setuptools>=61.0",
@@ -7,15 +6,14 @@ requires = [
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "robotframework-databaselibrary"
-authors = [{name="Franz Allan Valencia See", email="franz.see@gmail.com"},
+name = "my-awesome-library"
+authors = [{name="Andre Mochinin", email="mochinin@gmail.com"},
 ]
-description = "Database Library for Robot Framework"
+description = "My Awesome Library for Robot Framework"
 readme = "README.md"
 requires-python = ">=3.7"
 dependencies = [
-    "robotframework",
-    "robotframework-excellib"
+    "robotframework"
 ]
 classifiers = [
     "Programming Language :: Python :: 3",
@@ -26,11 +24,10 @@ license = {text = "Apache License 2.0"}
 dynamic = ["version"]
 
 [project.urls]
-"Homepage" = "https://github.com/MarketSquare/Robotframework-Database-Library"
-"Keyword docs" = "http://marketsquare.github.io/Robotframework-Database-Library/"
+"Homepage" = "https://github.com/amochin/my-awesome-library"
 
 [tool.setuptools.dynamic]
-version = {attr = "DatabaseLibrary.__version__"}
+version = {attr = "MyAwesomeLibrary.__version__"}
 
 [tool.black]
 line-length = 120
