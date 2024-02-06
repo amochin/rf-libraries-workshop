@@ -6,6 +6,7 @@ from http import HTTPStatus
 from typing import Optional
 from generated.employees_openapi_client import Client
 from generated.employees_openapi_client.api.employee_controller import find_all
+from generated.employees_openapi_client.api.employee_controller import find_one
 
 api_client = Client("http://158.101.191.70:8085")
 
@@ -30,7 +31,11 @@ def get_employee_data(employee_id):
     - Last Name
     - Role
     """
-    raise NotImplementedError("Looking for a student to implement me!")
+    response = find_one.sync_detailed(id=employee_id, client=api_client)
+    assert response.status_code == HTTPStatus.OK
+    response_content = json.loads(response.content)
+    return response_content
+    
 
 
 def update_employee_data(
