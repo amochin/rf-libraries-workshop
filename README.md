@@ -1,5 +1,9 @@
 # Robot Framework creating libraries workshop
-This is a workspace for docs and code samples for the workshop about creating libraries for Robot Framework
+
+
+
+# Workspace usage
+This is a workspace for docs and code samples for the workshop about creating libraries for Robot Framework.
 It can be used locally in [VS Code](https://code.visualstudio.com/) and in [Gitpod](https://www.gitpod.io).
 
 #### The workspace contains some VS Code configuration
@@ -61,3 +65,54 @@ So when you see a notification from VS Code, telling the port is open, click **O
 Simply navigate to the required folder (e.g. _logs_) and open the RF output files as usual.
 > - It's **your** browser, the same one where you have the Gitpod workspace VS Code running.
 > - You can also use a _Simple Browser_ in VS Code for viewing RF logs, but you can't have two tabs of it - so either VNC or logs. 
+
+# Workshop summary
+1. Introduction - why create your own library?
+2. Basic topics
+    1. Static libraries
+        - Module based libraries in Python (import as file)
+            - Function --> keyword
+            - Arguments
+                - Positional args
+                - Default values
+                - *varargs and **kwargs
+                - Argument conversion
+                    - manual
+                    - based on default value
+                    - type hints / function annotations
+                    - decorators
+            - Returning values
+                - Scalar values
+                - Objects, lists, dictionaries
+            - Failing / assertions (incl. [RF own exceptions](http://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#exceptions-provided-by-robot-framework) like ContinuableFailure)
+            - Logging - use RF API or Python standard API
+            - Library metadata ([Scope](http://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#toc-entry-566), Version, Docs)
+            - Select which functions become keywords
+                - Naming
+                - Decorators (@keyword, @not_keyword)
+        - Libraries as Python classes
+            - Import params -> constructors
+            - Import as package - set PythonPath
+            - Decorators
+                - @library
+                    - Disables automatic keyword recognition
+                    - Can set metadata
+    2. Dynamic libraries
+        - API methods
+        - New in RF 6.1 - [interfaces in public API](https://robot-framework.readthedocs.io/en/stable/autodoc/robot.api.html#module-robot.api.interfaces)
+        - PythonLibCore - shortly
+            - Gives cetralized access to keywords implemented in multiple classes / files
+            - Useful for larger libraries
+            - https://github.com/robotframework/PythonLibCore
+    3. Hybrid libraries
+3. Large excercies
+    1. Create a static library for automating an OpenAPI compatible REST API using the [Python OpenAPI Client generator](https://github.com/openapi-generators/openapi-python-client)
+    2. Create a dynamic library for automating an XML RPC application, using standard Python XML RPC client
+4. Publishing on PyPi
+    - Developing a library as package - install with pip -e
+    - What does a public library need?
+        - Readme
+        - License
+        - Version
+    - [Official packaging guide](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
+5. Remote interface - if time allows
